@@ -1,0 +1,61 @@
+/*botones de servicios*/
+
+.servicios {
+  background-color: rgb(233, 236, 239);
+}
+
+.btn-servicios {
+  color: white;
+  width: 50%;
+  background-color: $amarilloPastel;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.btn-servicios {
+  &:hover {
+    background-color: rgb(247, 197, 105);
+  }
+
+  &:focus {
+    background-color: rgb(255, 188, 66);
+  }
+}
+
+.btn-servicios--position {
+  padding-bottom: 10px;
+}
+
+.btn-servicios-2,
+.btn-servicios-3 {
+  @extend .btn-servicios;
+}
+
+/*title*/
+.title-card {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 900;
+}
+
+.title-card-2,
+.title-card-3 {
+  @extend .title-card;
+}
+
+.card-text {
+  text-align: justify;
+  
+}
+
+.card-img-top {
+  width: 100%;
+  height: 520px;
+}
+
+.servicios__text {
+  font-family: "Merriweather Sans", sans-serif;
+}

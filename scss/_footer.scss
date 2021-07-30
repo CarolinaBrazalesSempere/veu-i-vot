@@ -1,0 +1,148 @@
+/*footer*/
+footer {
+  background: rgb(183, 184, 185);
+  display: $flex;
+  padding: $padding;
+  justify-content: $espacioEntre;
+  height: $altura;
+  flex-direction: $fila;
+  img {
+    width: 100px;
+    border-radius: 50px;
+  }
+
+  h3 {
+    font-size: $titulosh3;
+    color: $grisClaro;
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: 900;
+  }
+
+  .informacionFooter {
+    ul {
+      list-style-type: none;
+      font-size: $listas;
+      text-align: $textoCentrado;
+      padding: $paddingListas;
+      font-weight: lighter;
+      color: $grisLight;
+    }
+
+    i {
+      color: $grisClaro;
+    }
+
+    li {
+      font-family: "Merriweather Sans", sans-serif;
+    }
+  }
+
+  .redesSociales {
+    h3 {
+      text-align: $textoCentrado;
+      padding-bottom: $paddingB;
+      font-weight: bold;
+      color: $grisClaro;
+    }
+
+    .fa-instagram:hover,
+    .fa-twitter:hover,
+    .fa-spotify:hover,
+    .fa-facebook:hover {
+      color: $blancoRoto;
+    }
+
+    i {
+      color: rgb(52, 58, 64);
+    }
+  }
+
+  .ubicacionFooter {
+    h3 {
+      text-align: center;
+      color: rgb(52, 58, 64);
+    }
+
+    a {
+      text-decoration: none;
+      color: $negro;
+      font-size: $listas;
+      font-weight: lighter;
+      color: $grisLight;
+      font-family: "Merriweather Sans", sans-serif;
+
+      &:hover {
+        color: $blancoRoto;
+      }
+    }
+  }
+
+  .paratiFooter {
+    ul {
+      list-style-type: none;
+      text-align: $textoCentrado;
+      font-weight: lighter;
+      font-size: $listas;
+    }
+
+    a {
+      text-decoration: none;
+      color: $grisLight;
+      font-family: "Merriweather Sans", sans-serif;
+      &:hover {
+        color: $blancoRoto;
+      }
+    }
+  }
+
+  .informacionFooter,
+  .paratiFooter {
+    h3 {
+      text-align: $textoCentrado;
+      font-weight: bold;
+    }
+  }
+}
+
+/*vista mobile*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  footer {
+    display: $flex;
+    padding: $padding;
+    justify-content: $espacioEntre;
+    height: $alturaMob;
+    flex-direction: $columna;
+    align-items: $centrado;
+
+    .redesSociales {
+      h3 {
+        padding-top: 20px;
+      }
+    }
+    h3 {
+      text-align: $centrado;
+      font-size: $titulosh3Mob;
+    }
+
+    img {
+      width: $ancho;
+      border-radius: 50px;
+    }
+
+    .informacionFooter {
+      h3 {
+        padding-top: $paddingTmob;
+      }
+    }
+
+    .ubicacionFooter {
+      h3 {
+        font-size: $listas;
+        padding-top: $paddingT;
+      }
+      a.location {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

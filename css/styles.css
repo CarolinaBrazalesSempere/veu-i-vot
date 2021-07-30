@@ -1,0 +1,135 @@
+/*mobile*/
+/*footer*/
+footer {
+  background: #b7b8b9;
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  height: 70%;
+  flex-direction: row; }
+  footer img {
+    width: 100px;
+    border-radius: 50px; }
+  footer h3 {
+    font-size: 1.2rem;
+    color: #343a40;
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: 900; }
+  footer .informacionFooter ul {
+    list-style-type: none;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 5px;
+    font-weight: lighter;
+    color: #454749; }
+  footer .informacionFooter i {
+    color: #343a40; }
+  footer .informacionFooter li {
+    font-family: "Merriweather Sans", sans-serif; }
+  footer .redesSociales h3 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: #343a40; }
+  footer .redesSociales .fa-instagram:hover,
+  footer .redesSociales .fa-twitter:hover,
+  footer .redesSociales .fa-spotify:hover,
+  footer .redesSociales .fa-facebook:hover {
+    color: #f8f9fa; }
+  footer .redesSociales i {
+    color: #343a40; }
+  footer .ubicacionFooter h3 {
+    text-align: center;
+    color: #343a40; }
+  footer .ubicacionFooter a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    color: #454749;
+    font-family: "Merriweather Sans", sans-serif; }
+    footer .ubicacionFooter a:hover {
+      color: #f8f9fa; }
+  footer .paratiFooter ul {
+    list-style-type: none;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 0.9rem; }
+  footer .paratiFooter a {
+    text-decoration: none;
+    color: #454749;
+    font-family: "Merriweather Sans", sans-serif; }
+    footer .paratiFooter a:hover {
+      color: #f8f9fa; }
+  footer .informacionFooter h3,
+  footer .paratiFooter h3 {
+    text-align: center;
+    font-weight: bold; }
+
+/*vista mobile*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  footer {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    height: 150%;
+    flex-direction: column;
+    align-items: center; }
+    footer .redesSociales h3 {
+      padding-top: 20px; }
+    footer h3 {
+      text-align: center;
+      font-size: 1.4rem; }
+    footer img {
+      width: 6.25rem;
+      border-radius: 50px; }
+    footer .informacionFooter h3 {
+      padding-top: 20px; }
+    footer .ubicacionFooter h3 {
+      font-size: 0.9rem;
+      padding-top: 10px; }
+    footer .ubicacionFooter a.location {
+      font-size: 0.9rem; } }
+
+/*botones de servicios*/
+.servicios {
+  background-color: #e9ecef; }
+
+.btn-servicios, .btn-servicios-2,
+.btn-servicios-3 {
+  color: white;
+  width: 50%;
+  background-color: #f8cf6b;
+  border: none;
+  border-radius: 25px;
+  padding: 10px; }
+
+.btn-servicios:hover, .btn-servicios-2:hover,
+.btn-servicios-3:hover {
+  background-color: #f7c569; }
+
+.btn-servicios:focus, .btn-servicios-2:focus,
+.btn-servicios-3:focus {
+  background-color: #ffbc42; }
+
+.btn-servicios--position {
+  padding-bottom: 10px; }
+
+/*title*/
+.title-card, .title-card-2,
+.title-card-3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 900; }
+
+.card-text {
+  text-align: justify; }
+
+.card-img-top {
+  width: 100%;
+  height: 520px; }
+
+.servicios__text {
+  font-family: "Merriweather Sans", sans-serif; }
