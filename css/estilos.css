@@ -210,8 +210,6 @@ a.our-books__btn--link {
   overflow-x: hidden;
 }
 
-
-
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .main-book__title {
     padding-top: 30px;
@@ -220,9 +218,6 @@ a.our-books__btn--link {
   .more-read-books__btn {
     padding-bottom: 40px;
   }
-
-  
-
 }
 
 /*fin index home*/
@@ -453,7 +448,6 @@ textarea[placeholder] {
   justify-content: center;
   padding-top: 30px;
   font-family: "Merriweather Sans", sans-serif;
-
 }
 
 .servicios__text {
@@ -478,12 +472,10 @@ textarea[placeholder] {
   text-transform: uppercase;
   padding-top: 20px;
   padding-left: 20px;
-  font-weight: bold;
   font-size: 3rem;
   font-family: "Merriweather Sans", sans-serif;
   font-weight: 900;
   color: white;
-  
 }
 
 .catalog__text {
@@ -491,7 +483,7 @@ textarea[placeholder] {
   padding-left: 20px;
   text-align: justify;
   font-size: 1rem;
-  color:white;
+  color: white;
   font-family: "Merriweather Sans", sans-serif;
 }
 .catalog__position {
@@ -504,18 +496,15 @@ textarea[placeholder] {
 
 .list-group {
   border-radius: 0px;
-  
 }
 
 .list-group a {
-  border-bottom: 2px solid transparent;
+  border-bottom: 1px solid rgb(212, 216, 219);
 }
 
 .list-group a:hover {
-  
   border-bottom: 2px solid rgb(248, 207, 107);
 }
-
 
 .list-arte,
 .list-autoedicion,
@@ -523,9 +512,15 @@ textarea[placeholder] {
 .list-pensamiento,
 .list-poesia {
   font-size: 1.2rem;
-  font-weight: 900;
   font-family: "Merriweather Sans", sans-serif;
   font-weight: 900;
   padding: 50px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   
+  .catalog__background {
+    padding-bottom: 50px;
+    
+  }
 }
