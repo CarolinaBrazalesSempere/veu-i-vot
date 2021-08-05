@@ -1,0 +1,140 @@
+.contactoContainer {
+  background-color: $grisBackground;
+}
+.contactoContainer {
+  h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+    font-size: 3rem;
+    font-weight: $negrita;
+    padding-top: 30px;
+    font-family: $font;
+  }
+
+  p {
+    display: flex;
+    justify-content: center;
+    font-family: $font;
+  }
+}
+
+form {
+  display: grid;
+  justify-items: center;
+}
+
+.nombreForm,
+.apellidosForm,
+.emailForm,
+.telefonoForm {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: black;
+}
+
+/*animaciones formulario*/
+.telefonoForm,
+.nombreForm,
+.apellidosForm,
+.emailForm {
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* fin animaciones form*/
+
+.nombreForm,
+.apellidosForm,
+.emailForm,
+.telefonoForm,
+.teleemosForm {
+  label {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: $negrita;
+    font-family: $font;
+  }
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(173, 181, 189);
+  border-radius: 25px;
+  resize: vertical;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(173, 181, 189);
+  border-radius: 25px;
+}
+
+.nombreApellidos,
+.emailTlf {
+  display: flex;
+}
+
+.teleemosForm {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  color: black;
+}
+
+input[type="submit"] {
+  background-color: $backgroundBtn;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  &:hover {
+    background-color: $hoverBtn;
+  }
+}
+
+.enviar {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  font-family: $font;
+}
+
+textarea[placeholder] {
+  padding: 10px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .contactoContainer {
+    h1 {
+      display: flex;
+      text-align: center;
+      justify-content: right;
+      font-size: 2rem;
+    }
+  }
+
+  section.contactoContainer,
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nombreForm,
+  .apellidosForm,
+  .emailForm,
+  .telefonoForm,
+  .teleemosForm {
+    label {
+      font-size: 1rem;
+    }
+  }
+}

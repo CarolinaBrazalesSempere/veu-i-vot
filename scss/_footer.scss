@@ -1,4 +1,3 @@
-/*footer*/
 footer {
   background: rgb(183, 184, 185);
   display: $flex;
@@ -14,8 +13,8 @@ footer {
   h3 {
     font-size: $titulosh3;
     color: $grisClaro;
-    font-family: "Merriweather Sans", sans-serif;
-    font-weight: 900;
+    font-family: $font;
+    font-weight: $negrita;
   }
 
   .informacionFooter {
@@ -33,7 +32,7 @@ footer {
     }
 
     li {
-      font-family: "Merriweather Sans", sans-serif;
+      font-family: $font;
     }
   }
 
@@ -41,7 +40,7 @@ footer {
     h3 {
       text-align: $textoCentrado;
       padding-bottom: $paddingB;
-      font-weight: bold;
+      font-weight: $negrita;
       color: $grisClaro;
     }
 
@@ -69,7 +68,7 @@ footer {
       font-size: $listas;
       font-weight: lighter;
       color: $grisLight;
-      font-family: "Merriweather Sans", sans-serif;
+      font-family: $font;
 
       &:hover {
         color: $blancoRoto;
@@ -88,7 +87,7 @@ footer {
     a {
       text-decoration: none;
       color: $grisLight;
-      font-family: "Merriweather Sans", sans-serif;
+      font-family: $font;
       &:hover {
         color: $blancoRoto;
       }
@@ -99,7 +98,7 @@ footer {
   .paratiFooter {
     h3 {
       text-align: $textoCentrado;
-      font-weight: bold;
+      font-weight: $negrita;
     }
   }
 }

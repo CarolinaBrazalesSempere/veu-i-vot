@@ -1,13 +1,13 @@
 /*botones de servicios*/
 
 .servicios {
-  background-color: rgb(233, 236, 239);
+  background-color: $grisBackground;
 }
 
 .btn-servicios {
   color: white;
   width: 50%;
-  background-color: $amarilloPastel;
+  background-color: $backgroundBtn;
   border: none;
   border-radius: 25px;
   padding: 10px;
@@ -15,11 +15,11 @@
 
 .btn-servicios {
   &:hover {
-    background-color: rgb(247, 197, 105);
+    background-color: $hoverBtn;
   }
 
   &:focus {
-    background-color: rgb(255, 188, 66);
+    background-color: $hoverBtn;
   }
 }
 
@@ -48,7 +48,6 @@
 
 .card-text {
   text-align: justify;
-  
 }
 
 .card-img-top {
@@ -57,5 +56,24 @@
 }
 
 .servicios__text {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: $font;
+}
+
+.servicios__title {
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  font-family: $font;
+}
+
+.servicios__text {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .servicios__title {
+    font-size: 1.6rem;
+  }
 }

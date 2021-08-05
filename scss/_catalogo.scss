@@ -1,0 +1,57 @@
+.catalog__background {
+  background-color: rgb(255, 188, 66);
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.catalog__title {
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 3rem;
+  font-family: $font;
+  font-weight: $negrita;
+  color: white;
+}
+
+.catalog__text {
+  padding-top: 20px;
+  padding-left: 20px;
+  text-align: justify;
+  font-size: 1rem;
+  color: white;
+  font-family: $font;
+}
+.catalog__position {
+  padding-top: 0px;
+}
+.catalog__list {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.list-group {
+  border-radius: 0px;
+  a {
+    border-bottom: 1px solid rgb(212, 216, 219);
+    &:hover {
+      border-bottom: 2px solid rgb(248, 207, 107);
+    }
+  }
+}
+
+.list-arte,
+.list-autoedicion,
+.list-narrativa,
+.list-pensamiento,
+.list-poesia {
+  font-size: 1.2rem;
+  font-family: $font;
+  font-weight: $negrita;
+  padding: 50px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .catalog__background {
+    padding-bottom: 50px;
+  }
+}

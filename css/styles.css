@@ -1,5 +1,4 @@
 /*mobile*/
-/*footer*/
 footer {
   background: #b7b8b9;
   display: flex;
@@ -29,7 +28,7 @@ footer {
   footer .redesSociales h3 {
     text-align: center;
     padding-bottom: 20px;
-    font-weight: bold;
+    font-weight: 900;
     color: #343a40; }
   footer .redesSociales .fa-instagram:hover,
   footer .redesSociales .fa-twitter:hover,
@@ -64,7 +63,7 @@ footer {
   footer .informacionFooter h3,
   footer .paratiFooter h3 {
     text-align: center;
-    font-weight: bold; }
+    font-weight: 900; }
 
 /*vista mobile*/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -91,6 +90,34 @@ footer {
     footer .ubicacionFooter a.location {
       font-size: 0.9rem; } }
 
+.row {
+  justify-content: space-around;
+  padding-top: 50px; }
+
+nav.navbar {
+  background-color: white;
+  font-size: 1.1rem; }
+  nav.navbar img {
+    border-radius: 50px;
+    width: 100px; }
+
+div#navbarNav.navbar-collapse.collapse {
+  justify-content: flex-end;
+  padding-bottom: 10px;
+  font-weight: 900; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  padding: 10px; }
+
+.nav-item a {
+  font-family: "Merriweather Sans", sans-serif;
+  border-bottom: 2px solid transparent; }
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #727375;
+  border-bottom: 2px solid #f8cf6b; }
+
 /*botones de servicios*/
 .servicios {
   background-color: #e9ecef; }
@@ -106,7 +133,7 @@ footer {
 
 .btn-servicios:hover, .btn-servicios-2:hover,
 .btn-servicios-3:hover {
-  background-color: #f7c569; }
+  background-color: #ffbc42; }
 
 .btn-servicios:focus, .btn-servicios-2:focus,
 .btn-servicios-3:focus {
@@ -133,3 +160,366 @@ footer {
 
 .servicios__text {
   font-family: "Merriweather Sans", sans-serif; }
+
+.servicios__title {
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  font-family: "Merriweather Sans", sans-serif; }
+
+.servicios__text {
+  display: flex;
+  justify-content: center; }
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .servicios__title {
+    font-size: 1.6rem; } }
+
+.catalog__background {
+  background-color: #ffbc42;
+  margin-left: 0px;
+  margin-right: 0px; }
+
+.catalog__title {
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 3rem;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 900;
+  color: white; }
+
+.catalog__text {
+  padding-top: 20px;
+  padding-left: 20px;
+  text-align: justify;
+  font-size: 1rem;
+  color: white;
+  font-family: "Merriweather Sans", sans-serif; }
+
+.catalog__position {
+  padding-top: 0px; }
+
+.catalog__list {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.list-group {
+  border-radius: 0px; }
+  .list-group a {
+    border-bottom: 1px solid #d4d8db; }
+    .list-group a:hover {
+      border-bottom: 2px solid #f8cf6b; }
+
+.list-arte,
+.list-autoedicion,
+.list-narrativa,
+.list-pensamiento,
+.list-poesia {
+  font-size: 1.2rem;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 900;
+  padding: 50px; }
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .catalog__background {
+    padding-bottom: 50px; } }
+
+.contactoContainer {
+  background-color: #e9ecef; }
+
+.contactoContainer h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: black;
+  font-size: 3rem;
+  font-weight: 900;
+  padding-top: 30px;
+  font-family: "Merriweather Sans", sans-serif; }
+
+.contactoContainer p {
+  display: flex;
+  justify-content: center;
+  font-family: "Merriweather Sans", sans-serif; }
+
+form {
+  display: grid;
+  justify-items: center; }
+
+.nombreForm,
+.apellidosForm,
+.emailForm,
+.telefonoForm {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: black; }
+
+/*animaciones formulario*/
+.telefonoForm:hover,
+.nombreForm:hover,
+.apellidosForm:hover,
+.emailForm:hover {
+  transform: scale(1.1); }
+
+/* fin animaciones form*/
+.nombreForm label,
+.apellidosForm label,
+.emailForm label,
+.telefonoForm label,
+.teleemosForm label {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: "Merriweather Sans", sans-serif; }
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #adb5bd;
+  border-radius: 25px;
+  resize: vertical; }
+
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #adb5bd;
+  border-radius: 25px; }
+
+.nombreApellidos,
+.emailTlf {
+  display: flex; }
+
+.teleemosForm {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  color: black; }
+
+input[type="submit"] {
+  background-color: #f8cf6b;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer; }
+  input[type="submit"]:hover {
+    background-color: #ffbc42; }
+
+.enviar {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  font-family: "Merriweather Sans", sans-serif; }
+
+textarea[placeholder] {
+  padding: 10px; }
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .contactoContainer h1 {
+    display: flex;
+    text-align: center;
+    justify-content: right;
+    font-size: 2rem; }
+  section.contactoContainer,
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+  .nombreForm label,
+  .apellidosForm label,
+  .emailForm label,
+  .telefonoForm label,
+  .teleemosForm label {
+    font-size: 1rem; } }
+
+.history-title {
+  background-color: #ffbc42;
+  height: 500px;
+  width: 100%; }
+
+.history-title h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  font-size: 4rem;
+  color: whitesmoke;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 900; }
+
+main.history-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 15px;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  column-gap: 50px; }
+
+.start-history__text {
+  padding-top: 30px;
+  text-align: justify; }
+
+.history-container__img {
+  padding-top: 30px;
+  width: 100%;
+  height: 100%; }
+
+.quote__text {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 10px; }
+
+.quote {
+  padding-top: 30px; }
+
+.start-history__text a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold; }
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .history-title {
+    background-position: right; }
+  main.history-container {
+    display: flex;
+    flex-direction: column; }
+  .history-title h1 {
+    text-align: center; }
+  .quote__text {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 10px; }
+  .history-container__img {
+    width: 100%; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Merriweather", serif; }
+
+.line {
+  border-top: 1px solid black;
+  height: 2px;
+  padding: 0;
+  margin: 20px auto 0 auto; }
+
+.main-book__text {
+  text-align: justify; }
+
+.main-book {
+  background-color: #e9ecef;
+  padding-bottom: 50px; }
+
+.main-book__cover {
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2); }
+
+.main-book__btn {
+  background-color: #f8cf6b;
+  border: none; }
+  .main-book__btn:hover {
+    background-color: #ffbc42; }
+
+.main-book__title, .main-book__btn, .more-read-books__title--size, .more-read-books__book--name, .more-read-books__btn, .month-author__title, .month-author__subtitle, .our-books__title {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 900; }
+
+.more-read-books__title--size {
+  font-size: 2rem; }
+
+.more-read-books__book--name {
+  font-size: 1.3rem; }
+
+.more-read-books {
+  padding-bottom: 50px;
+  background: white; }
+
+.more-read-books__title {
+  margin-left: 5px;
+  padding-top: 10px; }
+
+.more-read-books__title--weight {
+  font-weight: 900; }
+
+.more-read-books__book--author {
+  font-size: 1rem;
+  font-family: "Merriweather Sans", sans-serif;
+  padding-top: 10px; }
+
+.btn-secondary {
+  background-color: #f8cf6b;
+  color: white;
+  border: none; }
+  .btn-secondary:hover {
+    background-color: #ffbc42; }
+
+.month-author {
+  background: #e9ecef;
+  padding-bottom: 50px; }
+
+.month-author__img {
+  padding-top: 0px; }
+
+.month-author__title {
+  font-size: 2.5rem; }
+
+.month-author__subtitle {
+  font-size: 1.8rem; }
+
+.month-author__description {
+  text-align: justify; }
+  .month-author__description i {
+    font-weight: 900; }
+
+.month-author__button {
+  padding-left: 50px; }
+
+.month-author__button--style {
+  background-color: #f8cf6b;
+  border: none;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 900; }
+  .month-author__button--style:hover {
+    background-color: #ffbc42; }
+
+.our-books {
+  background-color: white; }
+
+.our-books--position {
+  padding-top: 0px; }
+
+.our-books__title {
+  padding-top: 10px;
+  padding-left: 20px; }
+
+.our-books__text {
+  font-family: "Merriweather Sans", sans-serif; }
+
+.our-books__btn {
+  padding-left: 1px; }
+
+.our-books__btn--style {
+  background-color: #f8cf6b;
+  border: none; }
+  .our-books__btn--style:hover {
+    background-color: #ffbc42; }
+
+a.our-books__btn--link {
+  text-decoration: none;
+  color: white;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 900; }
+
+.overflow {
+  overflow-x: hidden; }
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .main-book__title, .main-book__btn, .more-read-books__title--size, .more-read-books__book--name, .more-read-books__btn, .month-author__title, .month-author__subtitle, .our-books__title {
+    padding-top: 30px; }
+  .more-read-books__btn {
+    padding-bottom: 40px; } }
