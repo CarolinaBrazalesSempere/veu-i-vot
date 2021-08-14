@@ -27,7 +27,8 @@
 .main-book__btn {
   background-color: $backgroundBtn;
   border: none;
-  @extend .main-book__title;
+  font-family: $font;
+  font-weight: $negrita;
 
   &:hover {
     background-color: $hoverBtn;
@@ -71,7 +72,8 @@
 }
 
 .more-read-books__btn {
-  @extend .main-book__title;
+  font-family: $font;
+  font-weight: $negrita;
 }
 
 .btn-secondary {
