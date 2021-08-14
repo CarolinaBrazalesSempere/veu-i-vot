@@ -111,30 +111,4 @@ textarea[placeholder] {
   padding: 10px;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .contactoContainer {
-    h1 {
-      display: flex;
-      text-align: center;
-      justify-content: right;
-      font-size: 2rem;
-    }
-  }
 
-  section.contactoContainer,
-  form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .nombreForm,
-  .apellidosForm,
-  .emailForm,
-  .telefonoForm,
-  .teleemosForm {
-    label {
-      font-size: 1rem;
-    }
-  }
-}

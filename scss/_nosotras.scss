@@ -59,29 +59,3 @@ main.history-container {
   }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .history-title {
-    background-position: right;
-  }
-
-  main.history-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .history-title {
-    h1 {
-      text-align: center;
-    }
-  }
-
-  .quote__text {
-    font-size: 2rem;
-    text-align: center;
-    padding-top: 10px;
-  }
-
-  .history-container__img {
-    width: 100%;
-  }
-}
